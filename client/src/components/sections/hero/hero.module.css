@@ -1,0 +1,31 @@
+.hero {
+	margin-top: var(--header-height);
+	height: 50vh;
+	background-image: url("../../../assets/images/heroHome.jpg");
+	background-color: var(--bg-dark);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.heroContent {
+		padding-top: var(--header-height);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		gap: 1rem;
+
+		.title {
+			color: var(--clr-primary);
+			font-weight: var(--fw-bold);
+			font-size: var(--fs-main-heading);
+		}
+
+		.desc {
+			color: var(--clr-text-secondary);
+			max-width: 36ch;
+			line-height: 1.6;
+		}
+	}
+}

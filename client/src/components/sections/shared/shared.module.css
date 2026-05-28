@@ -1,0 +1,21 @@
+.sectionHeader {
+	text-align: center;
+
+	.title {
+		color: var(--clr-heading-light);
+		font-size: var(--fs-section-heading);
+		font-weight: var(--fw-bold);
+		letter-spacing: -6px;
+		text-transform: capitalize;
+
+		&[data-style="dark"] {
+			color: var(--clr-heading-dark);
+		}
+	}
+	.description {
+		color: var(--clr-text-primary);
+		font-size: var(--fs-section-subheading);
+		letter-spacing: -1px;
+		margin-top: -35px;
+	}
+}

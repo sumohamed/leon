@@ -1,0 +1,51 @@
+.features {
+	.grid {
+		padding-inline: 1rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+		justify-content: center;
+		gap: 1rem;
+
+		@media (max-width: 767px) {
+			gap: 0.4rem;
+		}
+	}
+
+	.card {
+		padding-block: var(--padding-xl) var(--padding-lg);
+		width: 100%;
+		max-width: 430px;
+		margin-inline: auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 1.3rem;
+
+		&:nth-of-type(2) {
+			box-shadow: 4px 4px 4px var(--clr-heading-dark);
+		}
+
+		.icon {
+			display: inline-block;
+			margin-inline: auto;
+			svg {
+				fill: var(--clr-primary);
+				width: 60px;
+			}
+		}
+		.title {
+			font-weight: var(--fw-bold);
+			font-size: var(--fs-card-title);
+			color: var(--clr-secondary);
+		}
+		.description {
+			max-width: 38ch;
+			margin-inline: auto;
+			color: var(--clr-text-primary);
+			font-weight: var(--fw-reg);
+			font-size: var(--fs-card-desc);
+			line-height: 2;
+			padding-bottom: 1rem;
+		}
+	}
+}

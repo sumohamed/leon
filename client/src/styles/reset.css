@@ -1,0 +1,55 @@
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	height: auto;
+	object-fit: cover;
+}
+ul,
+ol {
+	list-style: none;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+a,
+button {
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+}
+
+:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}

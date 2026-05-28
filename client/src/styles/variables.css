@@ -1,0 +1,33 @@
+:root {
+	--header-height: 80px;
+	--padding-xl: 60px;
+	--padding-lg: 30px;
+
+	--clr-primary: #10cab7;
+	--clr-secondary: #2c4755;
+	--clr-heading-light: #f6f6f6;
+	--clr-heading-dark: #ebeced;
+	--clr-muted: #637988;
+	--clr-text-primary: #575757;
+	--clr-text-secondary: #334752;
+	--bg-light: #ffffff;
+	--bg-dark: #fafafa;
+
+	--ff-main: "Work Sans";
+
+	--fs-base: 12px;
+	--fs-main-heading: 33.258px;
+	--fs-section-heading: 97.122px;
+	--fs-section-subheading: 15px;
+	--fs-card-title: 12px;
+	--fs-card-desc: 10px;
+	--fs-mail-text: 30px;
+	--fs-muted-text: 12.6px;
+	--fs-nav-link-lg: 17.4px;
+	--fs-nav-link-sm: 12.6px;
+	--fs-nav-footer: 8.73px;
+	--fs-social: 9px;
+
+	--fw-bold: 900;
+	--fw-reg: 400;
+}
