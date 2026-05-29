@@ -2,6 +2,7 @@ import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import mongoose from "mongoose";
+import portfolioRoutes from "./routes/portfolioRoutes.js";
 
 dotenv.config();
 
@@ -21,9 +22,7 @@ mongoose
 		console.error("Error connecting to MongoDB:", error.message);
 	});
 
-app.get("/", (req: Request, res: Response) => {
-	res.send("Leon Template API is running successfully! 🚀");
-});
+app.use("/api/portfolios", portfolioRoutes);
 
 app.listen(PORT, () => {
 	console.log(`[nodemon] Server is running on port ${PORT}`);
