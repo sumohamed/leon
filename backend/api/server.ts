@@ -1,8 +1,8 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import mongoose from "mongoose";
-import portfolioRoutes from "./routes/portfolioRoutes.js";
+import portfolioRoutes from "../routes/portfolioRoutes.js";
 
 dotenv.config();
 
